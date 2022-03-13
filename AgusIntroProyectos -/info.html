@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <div class="navegador">
+                <div class="contitulo">
+                    <h1 onclick="routingHome()" href="/index.html" class="titulo" id="titulo">Agustin Trezza</h1>
+                    <h2 class="subtitulo">Frontend Developer Junior</h2>
+                    <div class="reproductor" id="reproductor">
+                        <audio class="audiolight" id="audio" controls src="assets/img/audiogeneral.mp3" min="0" max="75" step="1" value="10" loop> BOTON </audio>
+                        <!-- <input type="range" min="0" max=@"100" class="slider"> -->
+                    </div> 
+                </div>
+                <div class="contnav">
+                    <div class="navegadortitulo">
+                        <nav class="navegacion" id="navegacion">
+                            <ul class="nav">
+                                <li><a class="navitem1" href="/index.html" id="item1">Mis Proyectos</a></li> 
+                                </li><a class="navitem4" href="/sobremi.html" id="item3">Sobre Mí</a></li> 
+                                <!-- </li><a class="navitemdos" href="/cv.html" id="item2">Mi CV</a></li>  -->
+                                </li><a class="navitem3 current" href="/info.html" id="item4">Certificados</a></li> 
+                            </ul>
+                        </nav>
+                        <div class="contlogos">
+                            <i onclick="mostrarMenuResponsive()" class="fas fa-bars" name="hamburguesa" id="hamburguesa"></i>
+                            <i onclick="darkMode()" class="far fa-moon" id="luna"></i>
+                            <i onclick="encenderAudio()" class="fas fa-volume-mute" id="encender"></i>
+                            <i onclick="minimizarAudio()" class="fas fa-minus" id="minimizar"></i>
+                            <!-- <img onclick="darkMode()" id="logo" class="luna"src="/assets/img/dark-mode.png" alt="Dark-mode"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedorcv">
+                <div class="contcv" onclick="abrirCv()" id="cv">
+                    <p class="textcv" id="cv1">MÍ CV</p>
+                </div>
+            </div>
+           
+                
+        <div class="cardnuevos">
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="cardprimero">
+                        React 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado1()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Juan Pablo de la Torre Valdez
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                       
+                    En este curso realizamos diferentes aplicaciones. Integrando Mongo, Node y Express con React.
+                        En las mismas hay request CRUD, conexiones con APIS a través de FETCH API y Axios.
+                        Hooks, components, REDUX, manejo de validaciones, formularios, context, Style Components.
+                        Realizamos algunas aplicaciones Server Side Rendering utilizando Next y Gatsby.
+                        Hicimos los deployment de las aplicaciones en Netlify, Heroku y Zeit.
+                        También vimos conceptos de testing a React a través de Jets y Cypress.   
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="1">
+                        JavaScript Moderno 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado2()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Juan Pablo de la Torre Valdez
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        En este curso primero vimos los conceptos de cero a avanzado en JavaScript Moderno.
+                        Manejo del DOM, eventos, POO, arreglos, objetos, condicionales, funciones y sus tipos, generadores, iteradores, promises, template literals, prototypes, clases, herencia, etc.
+                        Luego realizamos diferentes aplicaciones, utilizando diferentes tecnologías como React, Node, Express, MongoDB,y Electron. También consumimos en otras, APIS con JSON y Fetch.
+                        Por últimos vimos nociones al testing con Jest y Cypress, debug y performance.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="2">
+                        CSS Flexbox y Grid 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado3()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Juan Pablo de la Torre Valdez
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        En este curso realizamos diferentes diseños de páginas enfocados en prácticar las técnicas y herramientas de CSS3 como Flexbox y CSS Grid, nociones generales, sintáxis, estructuras, diseño Responsive, media queries, posicionamiento, imágenes (webp), logos, HTML5 (etiquetas, formularios, video) etc.
+                        Gulp Workflows, SASS (mixins, variables), perfomance.
+                        Utilicé en algunos de los proyectos Tailwind, Bootstrap y Skeleton.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="3">
+                        Desarrollo Web Completo 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado4()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Juan Pablo de la Torre Valdez
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        En este curso trabajamos realizando diferentes páginas web utilizando diferentes tecnologías como HTML5, CSS3, SASS, GULP, JAVASCRIPT. 
+                        Realizamos galerías, navegaciones, formularios, validaciones, un carrito con cotizador, registros a la base de datos, CRUD`S (Postman), sistema de inicio de sesión, agregar la información dinámicamente desde el backend con una base de datos MySQL administrada a través de TablePlus.
+                        Conectamos también en algunas de estos proyectos con API´S.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="4">
+                        Desarrollo Web Completo 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado5()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Ubaldo Acosta
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        En este curso vimos principalmente:         
+                        HTML5 ( estructuras, sintáxis, elementos y etiquetas, manejo de imágenes, listas, tablas, formularios, clases, importar hojas de estilos, scripts, fuentes, iconos, etc).
+                         – CSS3 (Selectores, sintáxis, media queries, posicionamiento, colores, bordes, márgenes, padding, fuentes, imágenes, íconos, display, gradientes, sombras, transiciones, flexbox, etc.
+                        -JavaScript ( Tipos de datos, operadores, ciclos, arreglos, funciones, objetos, clases, manejo de herencia. POO, manejo de errores, arrow y callbacks functions, promises, manejo del dom, eventos, etc.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="5">
+                        WordPress y WooCommerce 
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado6()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Juan Pablo de la Torre Valdez
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        En este curso conocí WordPress, y a través de complementarlo con WooCommerce realizamos un sitio web responsive, con tienda virtual. Aquí utilicé las diferentes herramientas de WordPress, como pluggins para diseño, cobros, funcionalidades, botones de carro de compras, de menú etc. A su vez, también a la carpeta del proyecto le sumamos un archivo .css para complementar y realizar un diseño mas personal al sitio. Por último le asigne el dominio www.doblerueda.online y lo hospedé en Hostinguer.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+            <div class="cardnuevo">
+                <div class="contenedortitulo">
+                    <h2 class="titulocard" id="6">
+                        JavaScript(EC5)
+                    </h2>
+                    <div class="contcert" onclick="abrirCertificado7()">
+                        <i class="fas fa-eye"></i>
+                        <p class="vercertificado">Ver Certificado</p>
+                    </div>
+                </div>
+                <h3>
+                    Fernando Herrera
+                </h3>
+
+                <div class="contenedorcontenido">
+                    <p class="parrafocert">
+                        Conceptos generales, sintaxis, variables, tipos de datos, funciones y sus tipos, objetos, arreglos, iteradores, condicionales, prototypes, JSON.
+                    </p>
+                    <h3>
+                        <hr>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="contenedorcards">
+            <div class="card" id="cardprimero">
+                <h2 class="titcert">React</h2>
+                <p class="text">En este curso realizamos diferentes aplicaciones. Integrando Mongo, Node y Express con React.
+                    En las mismas hay request CRUD, conexiones con APIS a través de FETCH API y Axios.
+                    Hooks, components, REDUX, manejo de validaciones, formularios, context, Style Components.
+                    Realizamos algunas aplicaciones Server Side Rendering utilizando Next y Gatsby.
+                    Hicimos los deployment de las aplicaciones en Netlify, Heroku y Zeit.
+                    También vimos conceptos de testing a React a través de Jets y Cypress.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/CertificadoReact-_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="1">
+                <h2 class="titcert">JavaScript Moderno</h2>
+                <p class="text">En este curso primero vimos los conceptos de cero a avanzado en JavaScript Moderno.
+                    Manejo del DOM, eventos, POO, arreglos, objetos, condicionales, funciones y sus tipos, generadores, iteradores, promises, template literals, prototypes, clases, herencia, etc.
+                    Luego realizamos diferentes aplicaciones, utilizando diferentes tecnologías como React, Node, Express, MongoDB,y Electron. También consumimos en otras, APIS con JSON y Fetch.
+                    Por últimos vimos nociones al testing con Jest y Cypress, debug y performance.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/JavaScript Moderno_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="3">
+                <h2 class="titcert">CSS Flexbox y Grid</h2>
+                <p class="text">En este curso realizamos diferentes diseños de páginas enfocados en prácticar las técnicas y herramientas de CSS3 como Flexbox y CSS Grid, nociones generales, sintáxis, estructuras, diseño Responsive, media queries, posicionamiento, imágenes (webp), logos, HTML5 (etiquetas, formularios, video) etc.
+                    Gulp Workflows, SASS (mixins, variables), perfomance.
+                    Utilicé en algunos de los proyectos Tailwind, Bootstrap y Skeleton.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/CSS Flexbox y Grid_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="4">
+                <h2 class="titcert">Desarrollo Web Completo - J.P Valdez</h2>
+                <p class="text">En este curso trabajamos realizando diferentes páginas web utilizando diferentes tecnologías como HTML5, CSS3, SASS, GULP, JAVASCRIPT. 
+                    Realizamos galerías, navegaciones, formularios, validaciones, un carrito con cotizador, registros a la base de datos, CRUD`S (Postman), sistema de inicio de sesión, agregar la información dinámicamente desde el backend con una base de datos MySQL administrada a través de TablePlus.
+                    Conectamos también en algunas de estos proyectos con API´S.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/WebCompleto JPValdez_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="5">
+                <h2 class="titcert">Desarrollo Web - Ubaldo Acosta</h2>
+                <p class="text">En este curso vimos principalmente:         
+                    HTML5 ( estructuras, sintáxis, elementos y etiquetas, manejo de imágenes, listas, tablas, formularios, clases, importar hojas de estilos, scripts, fuentes, iconos, etc).
+                     – CSS3 (Selectores, sintáxis, media queries, posicionamiento, colores, bordes, márgenes, padding, fuentes, imágenes, íconos, display, gradientes, sombras, transiciones, flexbox, etc.
+                    -JavaScript ( Tipos de datos, operadores, ciclos, arreglos, funciones, objetos, clases, manejo de herencia. POO, manejo de errores, arrow y callbacks functions, promises, manejo del dom, eventos, etc.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/WebUbaldoAcosta_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="6">
+                <h2 class="titcert">Wordpress WooCommerce</h2>
+                <p class="text">En este curso conocí WordPress, y a través de complementarlo con WooCommerce realizamos un sitio web responsive, con tienda virtual. Aquí utilicé las diferentes herramientas de WordPress, como pluggins para diseño, cobros, funcionalidades, botones de carro de compras, de menú etc. A su vez, también a la carpeta del proyecto le sumamos un archivo .css para complementar y realizar un diseño mas personal al sitio. Por último le asigne el dominio www.doblerueda.online y lo hospedé en Hostinguer.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/CertificadoTiendaVirtual_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+            <div class="card" id="2">
+                <h2 class="titcert">JavaScript(EC5)</h2>
+                <p class="text">Conceptos generales, sintaxis, variables, tipos de datos, funciones y sus tipos, objetos, arreglos, iteradores, condicionales, prototypes, JSON.</p>
+                    <hr>
+                <div class="contcert">
+                    <img class="certimg"src="/assets/img/CertificadoJavaScriptFHerrera_page-0001.jpg" alt="CertificadoReact">
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+            <!-- <div class="contenedorlogos container spacer">
+                <i onclick="direccionarLinkedin()" class="fab fa-linkedin" id="linkedin" ></i>
+                <i onclick="direccionarInstagram()" class="fab fa-instagram-square" id="instagram"></i>
+            </div> -->
+    </div>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="nav-footer">
+                <!-- <h3>Datos Personales</h3> -->
+                <div class="continternofooter">
+                    <div class="contredes">
+                        <i onclick="direccionarLinkedin()" class="fab fa-linkedin" id="linkedin" ></i>
+                        <i onclick="direccionarInstagram()" class="fab fa-instagram-square" id="instagram"></i>   
+                        <i class="fab fa-facebook-square" id="face"></i>
+                    </div>
+                    <nav class="datos">
+                        <a href="https://www.google.com" class="linkfooter">agustintrezza@gmail.com</a>
+                        <a href="https://whatsappweb.com" class="linkfooter">153 236-8312</a>
+                        <a href="https://www.google.com" class="linkfooter">Villa Sarmiento, Morón</a>
+                    </nav>
+                    <nav class="datos">
+                        <a href="https://www.google.com" class="linkfooter">Agustin Trezza</a>
+                        <a href="https://whatsappweb.com" class="linkfooter">FrontEnd Developer Junior</a>
+                        <!-- <a href="https://www.google.com" class="linkfooter">Villa Sarmiento, Morón</a> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+            
+    </footer>
+
+    <!-- <a href="#footer" class="btn-flotante" id="footeractivo">CONTACTO</a> -->
+    <i class="far fa-id-card btn-flotante" id="footeractivo"></i>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/info.js"></script>
+    <!-- <script src="js/info.js"></script>
+    <script src="js/cv.js"></script> -->
+</body>
+</html>

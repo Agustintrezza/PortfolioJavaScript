@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="contenido">
+        <div class="container">
+
+            <div class="navegador">
+                <div class="contitulo">
+                    <h1 class="titulo" id="titulo">Agustin Trezza</h1>
+                    <h2 class="subtitulo">Frontend Developer Junior</h2>
+                    <div class="reproductor">
+                        <audio class="audiolight" id="audio" controls src="assets/img/audiogeneral.mp3" min="0" max="75" step="1" value="10" loop> BOTON </audio>
+                        <!-- <input type="range" min="0" max="100" class="slider"> -->
+                    </div>
+                </div>
+                <div class="contnav">
+                    <div class="navegadortitulo">
+                        <nav class="navegacion" id="navegacion">
+                            <ul class="nav">
+                                <li><a class="navitem1 current" id="item1">Mis Proyectos</a></li> 
+                                <!-- href="/index.html" -->
+                                </li><a class="navitem4" href="/sobremi.html" id="item3" target="_blank">Sobre Mí</a></li> 
+                                <!-- </li><a class="navitemdos" href="/cv.html" id="item2">Mi CV</a></li>  -->
+                                </li><a class="navitem3" href="/info.html" id="item4" target="_blank">Certificados</a></li> 
+                            </ul>
+                        </nav>
+                        <div class="contlogos">
+                            <i onclick="mostrarMenuResponsive()" class="fas fa-bars" name="hamburguesa" id="hamburguesa"></i>
+                            <i onclick="darkMode()" class="far fa-moon" id="luna"></i>
+                            <i onclick="encenderAudio()" class="fas fa-volume-mute" id="encender"></i>
+                            <i onclick="minimizarAudio()" class="fas fa-minus" id="minimizar"></i>
+                            <!-- <img onclick="darkMode()" id="logo" class="luna"src="/assets/img/dark-mode.png" alt="Dark-mode"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="contenedorpaginas">
+            <div class="row">
+                <div class="six columns">
+                    <h2 class="paginas">Páginas</h2>
+                    <a href="https://agustintrezza12.netlify.app" class="clase" target="_blank">Tipo AirBnB</a>
+                    <a href="https://agustintrezza6.netlify.app" class="clase" target="_blank">Bienes Raices</a>
+                    <a href="https://agustintrezza5.netlify.app" class="clase" target="_blank">Seleccion de servicios con JavaScript</a>
+                    <a href="https://agustintrezza4.netlify.app" class="clase" target="_blank">Festival de Bandas</a>
+                    <a href="https://agustintrezza7.netlify.app" class="clase" target="_blank">Formulario tipo Netflix</a>
+                </div>
+
+                <div class="six columns">
+                    <div>
+                        <h2>Tiendas Virtuales</h2>
+                        <a href="https://doblerueda.online" class="clase" target="_blank">Sitio DobleRueda</a>
+                        <a href="https://agustintrezza.online" class="clase" target="_blank">Sitio Wordpress</a>
+                    </div>
+                    
+                </div>
+                <div class="six columns">
+                    <div>
+                        <h2>Angular</h2>
+                        <a href="https://informes.verifica.com.ar" class="clase" target="_blank">Verifica</a>
+                        <a href="https://informes.verifica.com.ar" class="clase" target="_blank">Portfolio Angular</a>
+                    </div>
+                    
+                </div>
+
+                <div class="six columns centro">
+                    <h2>Proyectos JavaScript con APIS</h2>
+                    <a href="https://agustrezza-criptojs.netlify.app/" class="clase" target="_blank">Consulta Criptomondedas</a>
+                    <a href="https://agustrezza-climajs.netlify.app/" class="clase" target="_blank">Consulta el clima</a>
+                    <a href="https://agustrezza-pixabayjs.netlify.app/" class="clase" target="_blank">Buscador de imágenes</a>
+                </div>
+                <div class="six columns centro">
+                    <h2>Proyectos con JavaScript</h2>
+                    <a href="https://agustrezza-carritojs.netlify.app" class="clase" target="_blank">Carrito de Compras</a>
+                    <a href="https://agustrezza-admingastosjs.netlify.app" class="clase" target="_blank">Administrador de Gastos</a>
+                    <a href="https://agustrezza-todojs.netlify.app" class="clase" target="_blank">Lista de comentarios con LocalStorage</a>
+                    <a href="https://agustrezza-carritojs.netlify.app" class="clase" target="_blank">Carrito de Compras</a>
+                    <a href="https://agustrezza-buscadorjs.netlify.app" class="clase" target="_blank">Buscador</a>
+                    <a href="https://agustrezza-cotizadorjs.netlify.app" class="clase" target="_blank">Cotizador</a>     
+                </div>
+
+                <div class="six columns1 bottom">
+                    <div>
+                        <h2> Proyectos con React</h2>
+                        <a href="https://reactportaldenoticias.netlify.app/" class="clase" target="_blank">Portal de Noticias</a>
+                        <a href="https://admindeturnosreact.netlify.app/" class="clase" target="_blank">Administrador de Pacientes</a>
+                        <a href="https://reactragosapi.netlify.app/" class="clase" target="_blank">Aplicación de Bebidas</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+            
+
+        </div>
+        <!-- <div class="contenedorlogos container">
+            <i onclick="direccionarLinkedin()" class="fab fa-linkedin" id="linkedin" ></i>
+            <i onclick="direccionarInstagram()" class="fab fa-instagram-square" id="instagram"></i>
+        </div> -->
+    
+    </div> <!--#contenido-->
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="nav-footer">
+                <!-- <h3>Datos Personales</h3> -->
+                <div class="continternofooter">
+                    <div class="contredes">
+                        <i onclick="direccionarLinkedin()" class="fab fa-linkedin" id="linkedin" ></i>
+                        <i onclick="direccionarInstagram()" class="fab fa-instagram-square" id="instagram"></i>   
+                        <i class="fab fa-facebook-square" id="face"></i>
+                    </div>
+                    <nav class="datos">
+                        <a href="https://www.google.com" class="linkfooter">agustintrezza@gmail.com</a>
+                        <a href="https://whatsappweb.com" class="linkfooter">153 236-8312</a>
+                        <a href="https://www.google.com" class="linkfooter">Villa Sarmiento, Morón</a>
+                    </nav>
+                    <nav class="datos">
+                        <a href="https://www.google.com" class="linkfooter">Agustin Trezza</a>
+                        <a href="https://whatsappweb.com" class="linkfooter">FrontEnd Developer Junior</a>
+                        <!-- <a href="https://www.google.com" class="linkfooter">Villa Sarmiento, Morón</a> -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+            
+    </footer>
+
+    <!-- <a href="#footer" class="btn-flotante" id="footeractivo">CONTACTO</a> -->
+    <i class="far fa-id-card btn-flotante" id="footeractivo"></i>
+    <div class="descarg" id="cv1"></div>
+
+    <div class="descarg" id="cv2"></div>
+    <div class="descargahambdark1" id="cardprimero"></div>
+    <div class="descargahambdark1" id="1"></div>
+    <div class="descargahambdark1" id="2"></div>
+    <div class="descargahambdark1" id="3"></div>
+    <div class="descargahambdark1" id="4"></div>
+    <div class="descargahambdark1" id="5"></div>
+    <div class="descargahambdark1" id="6"></div>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
